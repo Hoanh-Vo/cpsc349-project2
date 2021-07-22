@@ -1,12 +1,11 @@
 ---
 site: Pet Photos
+title: Team 6
 layout: base
 ---
 
 
-{% unless page.url == '/' %}
-    <a href="{{ '/' | url }}">Home</a>
-{% endunless %}
+
 
 {{ content }}
  <!-- This hides the main photo list when you are on a photo page. not display the lists if current url == base url-->
@@ -14,8 +13,8 @@ layout: base
  {% unless page.url != '/' %}
  <ul>
      {% for photo in collections.photos %}
-         <li>                    
-             <a class="hover: text-blue-800 border-gray-800" href="{{ photo.url | url}}">
+         <li class="photo_links" >                    
+             <a href="{{ photo.url | url}}">
                  A {{ photo.data.photo_keyword }} photo
                  by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}                                            
              </a>                
@@ -29,7 +28,7 @@ layout: base
  {% for photo in collections.photos %}
      {% if page.url == photo.url%}
      <h3> Available Details:</h3>
-     <ul>
+     <ul class="transition_scale_up_100">
 
          {% if photo.data.photo_location_city != '' %}
          <li>
@@ -70,7 +69,7 @@ layout: base
  {% capture rValue  %}{{% rValue | plus: 1 %}}{% endcapture %}    
 
  <!-- Rendering the pageable tab -->
- <div class="text-center hover:text-blue-900 font-bold ">
+ <div class="pagination_bar ">
  <!-- Rendering the pageable tab when the current page is not the first or last page -->
  {% if numpage >  0  and numpage < 99 %}  
      <!-- add 00 to the lvalue and rvalue before convert back to string -->               
@@ -92,22 +91,22 @@ layout: base
      {% endif %}      
 
 
- <a   href="{{lurl |url }}">Previous</a>   &nbsp;
+ <a  class="hoover_to_purple" href="{{lurl |url }}">Previous</a>   &nbsp;
  <a   href="">{{numpage}}</a>        &nbsp;
- <a   href="{{rurl | url }}">Next</a>   
+ <a  class="hoover_to_purple" href="{{rurl | url }}">Next</a>   
 
  <!-- Rendering the pageable tab when the current page is nthe last page -->    
  {% elsif numpage ==  99 %}
      {% capture lurl  %}{{ "/photos/0xx/" | replace: "xx", lValue }}{% endcapture %}             
-     <a   href="{{lurl | url }}">Previous</a>   &nbsp;
+     <a  class="hoover_to_purple" href="{{lurl | url }}">Previous</a>   &nbsp;
      <a   href="">{{numpage}}</a>        &nbsp;
-     <a   href="">Next</a>    
+     <a  class="hoover_to_purple" href="">Next</a>    
  <!-- Rendering the pageable tab when the current page is first page --> 
  {% elsif numpage ==  0 %}
      {% capture rurl  %}{{ "/photos/00xx/" | replace: "xx", rValue }}{% endcapture %}                
-     <a   href="">Previous</a>           &nbsp;
+     <a  class="hoover_to_purple" href="">Previous</a>           &nbsp;
      <a   href="">{{numpage}}</a>        &nbsp;
-     <a   href="{{rurl | url }}">Next</a>              
+     <a  class="hoover_to_purple" href="{{rurl | url }}">Next</a>              
  {% endif %}                      
  </div>
  

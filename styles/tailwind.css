@@ -7,17 +7,43 @@
     h1{
         color: red;
         font-family: serif;
-        font-size: 3rem;
-       
+        font-size: 4rem;         
+
     }
 }
 
 /* Custom Tailwind classes go here */
 @layer components {
 
-    .custom-tailwind {
-        @apply text-white text-blue-800 border-gray-800 bg-blue-500 text-center font-bold
+  
+    .header_footer {
+        @apply text-blue-900  font-bold text-3xl 
     }
+    .hoover_to_purple {
+        @apply hover:text-purple-900
+    }
+    .photo_links {
+        @apply text-green-900  font-bold hover:text-red-800 
+    }   
+    .pagination_bar {
+        @apply text-green-800  text-center  font-bold
+    }
+    .padding_lelf_righ_10{
+        @apply px-10
+    }
+    .padding_all_side_40{
+        @apply p-40
+    }
+    .margin_top_bottom_10{
+        @apply py-10
+    }
+    .transition_scale_up_100 {
+        @apply transition-transform transform hover:scale-100 h-16 w-full
+    }
+    .animation_zoom{
+        @apply animate-pulse h-16 w-full
+    }
+
 
 }
 
