@@ -15,7 +15,7 @@ layout: base
  <ul>
      {% for photo in collections.photos %}
          <li>                    
-             <a href="{{ photo.url | url}}">
+             <a class="hover: text-blue-800 border-gray-800" href="{{ photo.url | url}}">
                  A {{ photo.data.photo_keyword }} photo
                  by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}                                            
              </a>                
@@ -70,7 +70,7 @@ layout: base
  {% capture rValue  %}{{% rValue | plus: 1 %}}{% endcapture %}    
 
  <!-- Rendering the pageable tab -->
- <div class="pagination">
+ <div class="text-center hover:text-blue-900 font-bold ">
  <!-- Rendering the pageable tab when the current page is not the first or last page -->
  {% if numpage >  0  and numpage < 99 %}  
      <!-- add 00 to the lvalue and rvalue before convert back to string -->               

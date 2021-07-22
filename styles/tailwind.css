@@ -2,11 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/*  style for h1 */
+@layer base{
+    h1{
+        color: red;
+        font-family: serif;
+        font-size: 3rem;
+       
+    }
+}
+
 /* Custom Tailwind classes go here */
 @layer components {
 
     .custom-tailwind {
-        @apply text-white bg-blue-500
+        @apply text-white text-blue-800 border-gray-800 bg-blue-500 text-center font-bold
     }
 
 }
+

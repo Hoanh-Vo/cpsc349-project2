@@ -13,13 +13,13 @@
     </head>
     <body>
          <!-- Added site name to header/NAV -->
-    <header>
-        <h1 class="siteName">{{ site }}</h1>
+    <header >
+        <h1 class="text-center">{{ site }}</h1>
 
         <nav>
             <ul>
-                <li><a href="{{ '/' | url }}" >Home</a></li>
-                <li><a href="{{ '/aboutUs' | url}}">About Us</a></li>
+                <a class="hover:translate-x-7 text-blue-800 font-bold " href="{{ '/' | url }}" >Home</a>
+                <a class="hover:translate-x-7 text-blue-800 font-bold " href="{{ '/aboutUs' | url}}">About Us</a>
             </ul>
         </nav>
          
