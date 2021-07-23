@@ -13,9 +13,9 @@
     </head>
     <style>
         :root {
-        --red: 28;
-        --green: 150;
-        --blue: 130;
+        --red: 86;
+        --green: 81;
+        --blue: 92;
 
         --accessible-color: calc(
             (
@@ -31,18 +31,14 @@
         }
 
         body {
-        color:
-            rgb(
-            var(--accessible-color),
-            var(--accessible-color),
-            var(--accessible-color)
-            );
-        background-color:
-            rgb(
-            var(--red),
-            var(--green),
-            var(--blue)
-            );
+            color:
+                rgb(
+                var(--accessible-color),
+                var(--accessible-color),
+                var(--accessible-color)
+                );
+            background-color:
+                {{color_keyword}}
         }
     </style> 
     <body class="padding_lelf_righ_10">
@@ -74,7 +70,7 @@
         <!-- Implemented Footer on the page. Added a line break for easy consumption.  -->
         <!-- Added a NAV based Site MAP to the footer  -->
             <hr>
-            <footer class="header_footer ">
+            <footer class="header_footer">
                 <!-- Added Copyright symbol, c -->
                 <p>&copy;Copyright Team 6. All rights Reserved!</p>
                 <nav>

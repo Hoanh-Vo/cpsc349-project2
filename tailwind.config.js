@@ -9,5 +9,6 @@ module.exports = {
       backgroundColor:["active"],
     },
   },
+
   plugins: [],
 }
