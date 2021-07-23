@@ -28,7 +28,7 @@ layout: base
  {% for photo in collections.photos %}
      {% if page.url == photo.url%}
      <h3> Available Details:</h3>
-     <ul class="transition_scale_up_100">
+     <ul>
 
          {% if photo.data.photo_location_city != '' %}
          <li>
@@ -91,23 +91,23 @@ layout: base
      {% endif %}      
 
 
- <a  class="hoover_to_purple" href="{{lurl |url }}">Previous</a>   &nbsp;
- <a   href="">{{numpage}}</a>        &nbsp;
- <a  class="hoover_to_purple" href="{{rurl | url }}">Next</a>   
+    <a  class="hoover_to_purple" href="{{ lurl |url }}">Previous</a>   &nbsp;
+    <a   href="">{{numpage}}</a>        &nbsp;
+    <a  class="hoover_to_purple" href="{{ rurl | url }}">Next</a>   
 
- <!-- Rendering the pageable tab when the current page is nthe last page -->    
- {% elsif numpage ==  99 %}
-     {% capture lurl  %}{{ "/photos/0xx/" | replace: "xx", lValue }}{% endcapture %}             
-     <a  class="hoover_to_purple" href="{{lurl | url }}">Previous</a>   &nbsp;
-     <a   href="">{{numpage}}</a>        &nbsp;
-     <a  class="hoover_to_purple" href="">Next</a>    
- <!-- Rendering the pageable tab when the current page is first page --> 
- {% elsif numpage ==  0 %}
-     {% capture rurl  %}{{ "/photos/00xx/" | replace: "xx", rValue }}{% endcapture %}                
-     <a  class="hoover_to_purple" href="">Previous</a>           &nbsp;
-     <a   href="">{{numpage}}</a>        &nbsp;
-     <a  class="hoover_to_purple" href="{{rurl | url }}">Next</a>              
- {% endif %}                      
+    <!-- Rendering the pageable tab when the current page is nthe last page -->    
+    {% elsif numpage ==  99 %}
+        {% capture lurl  %}{{ "/photos/0xx/" | replace: "xx", lValue }}{% endcapture %}             
+        <a  class="hoover_to_purple" href="{{ lurl | url }}">Previous</a>   &nbsp;
+        <a   href="">{{numpage}}</a>        &nbsp;
+        <a  class="hoover_to_purple" href="">Next</a>    
+    <!-- Rendering the pageable tab when the current page is first page --> 
+    {% elsif numpage ==  0 %}
+        {% capture rurl  %}{{ "/photos/00xx/" | replace: "xx", rValue }}{% endcapture %}                
+        <a  class="hoover_to_purple" href="">Previous</a>           &nbsp;
+        <a   href="">{{numpage}}</a>        &nbsp;
+        <a  class="hoover_to_purple" href="{{ rurl | url }}">Next</a>              
+    {% endif %}                      
  </div>
  
 <!-- ===========END============implementing pageble nav by Bradley coding in liquid========================-->
