@@ -595,6 +595,10 @@ p{
   color: green
 }
 
+li{
+  color: blue
+}
+
 .container {
   width: 100%;
 }
@@ -718,6 +722,13 @@ p{
   transition-duration: 150ms;
   transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.boder_double{
+  border-width: 4px;
+  border-style: double;
+  --tw-border-opacity: 1;
+  border-color: rgba(30, 64, 175, var(--tw-border-opacity))
 }
 
 .sr-only {
@@ -13052,6 +13063,46 @@ p{
 }
 
 .border-none {
+  border-style: none;
+}
+
+.hover\:border-solid:hover {
+  border-style: solid;
+}
+
+.hover\:border-dashed:hover {
+  border-style: dashed;
+}
+
+.hover\:border-dotted:hover {
+  border-style: dotted;
+}
+
+.hover\:border-double:hover {
+  border-style: double;
+}
+
+.hover\:border-none:hover {
+  border-style: none;
+}
+
+.focus\:border-solid:focus {
+  border-style: solid;
+}
+
+.focus\:border-dashed:focus {
+  border-style: dashed;
+}
+
+.focus\:border-dotted:focus {
+  border-style: dotted;
+}
+
+.focus\:border-double:focus {
+  border-style: double;
+}
+
+.focus\:border-none:focus {
   border-style: none;
 }
 
@@ -45052,6 +45103,46 @@ p{
     border-style: none;
   }
 
+  .sm\:hover\:border-solid:hover {
+    border-style: solid;
+  }
+
+  .sm\:hover\:border-dashed:hover {
+    border-style: dashed;
+  }
+
+  .sm\:hover\:border-dotted:hover {
+    border-style: dotted;
+  }
+
+  .sm\:hover\:border-double:hover {
+    border-style: double;
+  }
+
+  .sm\:hover\:border-none:hover {
+    border-style: none;
+  }
+
+  .sm\:focus\:border-solid:focus {
+    border-style: solid;
+  }
+
+  .sm\:focus\:border-dashed:focus {
+    border-style: dashed;
+  }
+
+  .sm\:focus\:border-dotted:focus {
+    border-style: dotted;
+  }
+
+  .sm\:focus\:border-double:focus {
+    border-style: double;
+  }
+
+  .sm\:focus\:border-none:focus {
+    border-style: none;
+  }
+
   .sm\:border-transparent {
     border-color: transparent;
   }
@@ -76630,6 +76721,46 @@ p{
   }
 
   .md\:border-none {
+    border-style: none;
+  }
+
+  .md\:hover\:border-solid:hover {
+    border-style: solid;
+  }
+
+  .md\:hover\:border-dashed:hover {
+    border-style: dashed;
+  }
+
+  .md\:hover\:border-dotted:hover {
+    border-style: dotted;
+  }
+
+  .md\:hover\:border-double:hover {
+    border-style: double;
+  }
+
+  .md\:hover\:border-none:hover {
+    border-style: none;
+  }
+
+  .md\:focus\:border-solid:focus {
+    border-style: solid;
+  }
+
+  .md\:focus\:border-dashed:focus {
+    border-style: dashed;
+  }
+
+  .md\:focus\:border-dotted:focus {
+    border-style: dotted;
+  }
+
+  .md\:focus\:border-double:focus {
+    border-style: double;
+  }
+
+  .md\:focus\:border-none:focus {
     border-style: none;
   }
 
@@ -108214,6 +108345,46 @@ p{
     border-style: none;
   }
 
+  .lg\:hover\:border-solid:hover {
+    border-style: solid;
+  }
+
+  .lg\:hover\:border-dashed:hover {
+    border-style: dashed;
+  }
+
+  .lg\:hover\:border-dotted:hover {
+    border-style: dotted;
+  }
+
+  .lg\:hover\:border-double:hover {
+    border-style: double;
+  }
+
+  .lg\:hover\:border-none:hover {
+    border-style: none;
+  }
+
+  .lg\:focus\:border-solid:focus {
+    border-style: solid;
+  }
+
+  .lg\:focus\:border-dashed:focus {
+    border-style: dashed;
+  }
+
+  .lg\:focus\:border-dotted:focus {
+    border-style: dotted;
+  }
+
+  .lg\:focus\:border-double:focus {
+    border-style: double;
+  }
+
+  .lg\:focus\:border-none:focus {
+    border-style: none;
+  }
+
   .lg\:border-transparent {
     border-color: transparent;
   }
@@ -139795,6 +139966,46 @@ p{
     border-style: none;
   }
 
+  .xl\:hover\:border-solid:hover {
+    border-style: solid;
+  }
+
+  .xl\:hover\:border-dashed:hover {
+    border-style: dashed;
+  }
+
+  .xl\:hover\:border-dotted:hover {
+    border-style: dotted;
+  }
+
+  .xl\:hover\:border-double:hover {
+    border-style: double;
+  }
+
+  .xl\:hover\:border-none:hover {
+    border-style: none;
+  }
+
+  .xl\:focus\:border-solid:focus {
+    border-style: solid;
+  }
+
+  .xl\:focus\:border-dashed:focus {
+    border-style: dashed;
+  }
+
+  .xl\:focus\:border-dotted:focus {
+    border-style: dotted;
+  }
+
+  .xl\:focus\:border-double:focus {
+    border-style: double;
+  }
+
+  .xl\:focus\:border-none:focus {
+    border-style: none;
+  }
+
   .xl\:border-transparent {
     border-color: transparent;
   }
@@ -171373,6 +171584,46 @@ p{
   }
 
   .\32xl\:border-none {
+    border-style: none;
+  }
+
+  .\32xl\:hover\:border-solid:hover {
+    border-style: solid;
+  }
+
+  .\32xl\:hover\:border-dashed:hover {
+    border-style: dashed;
+  }
+
+  .\32xl\:hover\:border-dotted:hover {
+    border-style: dotted;
+  }
+
+  .\32xl\:hover\:border-double:hover {
+    border-style: double;
+  }
+
+  .\32xl\:hover\:border-none:hover {
+    border-style: none;
+  }
+
+  .\32xl\:focus\:border-solid:focus {
+    border-style: solid;
+  }
+
+  .\32xl\:focus\:border-dashed:focus {
+    border-style: dashed;
+  }
+
+  .\32xl\:focus\:border-dotted:focus {
+    border-style: dotted;
+  }
+
+  .\32xl\:focus\:border-double:focus {
+    border-style: double;
+  }
+
+  .\32xl\:focus\:border-none:focus {
     border-style: none;
   }
 
