@@ -599,6 +599,10 @@ li{
   color: green
 }
 
+a{
+  color: blue
+}
+
 .container {
   width: 100%;
 }
@@ -694,6 +698,17 @@ li{
 .hooverPurple:hover {
   --tw-text-opacity: 1;
   color: rgba(76, 29, 149, var(--tw-text-opacity));
+}
+
+.hooverBlue{
+  --tw-text-opacity: 1;
+  color: rgba(59, 130, 246, var(--tw-text-opacity))
+}
+
+.hooverBlue:hover {
+  --tw-text-opacity: 1;
+  color: rgba(30, 58, 138, var(--tw-text-opacity));
+  text-decoration: underline;
 }
 
 .photo_links {
