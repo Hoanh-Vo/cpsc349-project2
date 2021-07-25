@@ -659,10 +659,10 @@ a{
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  justify-items: center;
   overflow: hidden;
   --tw-bg-opacity: 1;
-  background-color: rgba(17, 24, 39, var(--tw-bg-opacity))
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  padding-left: 2.5rem
 }
 
 .nav_link:hover {
